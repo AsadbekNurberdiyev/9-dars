@@ -12,11 +12,11 @@ const Header = () => {
                 <div className="flex flex-wrap items-center gap-4 flex-1 min-w-[280px]">
                     <div className="flex items-center gap-2">
                         <img
-                            src="https://alifshop.uz/_ipx/s_113x32/images/alifshop-logo.svg"
-                            alt="Alif logo"
+                            src="https://api.logobank.uz/media/logos_preview/Uzum-01.png"
+                            alt="Uzum logo"
                             className='w-[130px]'
                         />
-                        <div className='hidden md:flex items-center gap-2 px-3 py-2 bg-orange-300 hover:bg-orange-200 rounded-lg cursor-pointer'>
+                        <div className='hidden md:flex items-center gap-2 px-3 py-2 bg-indigo-300 hover:bg-indigo-200 rounded-lg cursor-pointer'>
                             <GalleryVerticalEnd />
                             <span className="text-sm">Tovarlar Katalogi</span>
                         </div>
@@ -30,16 +30,16 @@ const Header = () => {
                         <Search size={18} className='cursor-pointer me-2' />
                     </div>
                 </div>
-                <div className="flex items-center gap-3 ">
-                    <Link to="/cart" className="flex flex-col items-center text-sm">
-                        <ShoppingCart size={22} className='hover:text-orange-300' />
+                <div className="flex items-center gap-8 ">
+                    <Link to="/cart" className="flex  gap-2 items-center text-sm">
+                        <ShoppingCart size={22} className='hover:text-indigo-300' />
                         <p>Savat</p>
                     </Link>
-                    <button className='flex flex-col items-center text-sm'>
-                        <Heart size={22} className='hover:text-orange-300' />
+                    <button className='flex gap-2 cursor-pointer items-center text-sm'>
+                        <Heart size={22} className='hover:text-indigo-300' />
                         <p>Saralanganlar</p>
                     </button>
-                    <button className='border px-4 py-2 rounded-lg border-orange-300 hover:bg-orange-200 text-sm'>
+                    <button className='border px-4 py-2 rounded-lg border-indigo-300 hover:bg-indigo-200 text-sm'>
                         Kirish
                     </button>
                     <button className='md:hidden' onClick={() => setMenuOpen(!menuOpen)}>
